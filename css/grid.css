@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr minmax(320px, 978px) 1fr;
+}
+.very-top-bar-content {
+	grid-column: -2 / 2;
+	display: grid;
+	grid-template-columns: repeat(5, 20px);
+	justify-content: right;
+}

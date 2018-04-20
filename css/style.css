@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    vertical-align: baseline;
+    background: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Header -> Very Top Bar =========*/
+header {
+    background-image: url(../images/header-background.png);
+    background-position: center;
+    background-size: cover;
+}
+header .very-top-bar-content {
+    padding: 15px 0;
+}
+header .very-top-bar-content a {
+    color: #FFFFFF;
+    text-align: center;
+}
+header .very-top-bar-content .current-page {
+    color: #CF9C67;
+}
