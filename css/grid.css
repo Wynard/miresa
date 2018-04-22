@@ -2,9 +2,66 @@
     display: grid;
     grid-template-columns: 1fr minmax(320px, 978px) 1fr;
 }
+
+/* Header -> Very Top Bar =========*/
+.very-top-bar {
+	grid-column: 2 / -2;
+}
 .very-top-bar-content {
-	grid-column: -2 / 2;
 	display: grid;
-	grid-template-columns: repeat(5, 20px);
+	grid-template-columns: repeat(6, auto);
 	justify-content: right;
+}
+/* Header -> Navbar =========*/
+.navbar {
+	grid-column: 1 / -1;
+}
+.navbar-content {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: 5fr repeat(5, auto);
+}
+.navbar-content > form {
+	align-self: center;
+	display: none;
+}
+
+/* Header -> Main Title =========*/
+.main-title .main-title-content {
+	grid-column: 2 / -2;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+   .container {
+	    display: grid;
+	    grid-template-columns: 1fr minmax(320px, 90%) 1fr;
+	}
+	.navbar-content > a {
+		display: none;
+	}
+
+	.navbar-content > form {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+	.navbar-content {
+		display: block;
+	}
 }
