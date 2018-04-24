@@ -78,6 +78,9 @@
 	.navbar-content > form {
 		display: block;
 	}
+	.features-content{
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 
@@ -89,7 +92,20 @@
 
 
 @media only screen and (max-width: 750px) {
+	.container {
+	    display: grid;
+	    grid-template-columns: 1fr minmax(320px, 90%) 1fr;
+	}
 	.navbar-content {
 		display: block;
 	}
+	.intro-content article {
+		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.features-content{
+		grid-template-columns: 1fr;
+	}
+
 }
