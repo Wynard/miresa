@@ -39,6 +39,7 @@
 .intro-content article {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
 }
 /* Features -> Features Content */
 .features-content {
@@ -52,8 +53,13 @@
 .features-content .btn {
 	grid-column: 1 / -1;
 }
-
-
+/* Album -> Album Content =======*/
+.album-content {
+	grid-column: 2 / -2; 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 30px;
+}
 
 
 
