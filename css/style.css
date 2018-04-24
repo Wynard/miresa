@@ -13,6 +13,7 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     overflow: visible;
+    transition: all .3s ease-in-out;
 }
 
 h1,
@@ -246,6 +247,168 @@ header .navbar-content a:last-of-type {
 .album-content .album-image img {
     width: 220px;
 }
+/* Staff -> Staff Content =======*/
+.staff {
+    padding: 80px 0;
+    background-image: url(../images/staff-background.png);
+    background-size: cover;
+    background-position: center;
+}
+.staff .staff-content .section-title h3,
+.staff .staff-content .section-title p {
+    color: #FFFFFF;
+}
+
+/* Staff -> Staff Content -> Person =======*/
+.staff-content .person {
+    margin-top: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.staff-content .person h6 {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.staff-content .person p {
+    text-transform: capitalize;
+    font-size: 10px;
+}
+.staff-content .person .social-links {
+    margin-top: 15px;
+}
+.staff-content .person .social-links a i {
+    width: 30px;
+}
+.staff-content .person .social-links a {
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: all .3s ease-in-out;
+}
+.staff-content .person .social-links a:nth-of-type(4n+1):hover {
+    background-color: #00ACEE;
+}
+.staff-content .person .social-links a:nth-of-type(4n+2):hover {
+    background-color: #0E76A8;
+}
+.staff-content .person .social-links a:nth-of-type(4n+3):hover {
+    background-color: #DB4A39;
+}
+.staff-content .person .social-links a:nth-of-type(4n+4):hover {
+    background-color: #4E658E;
+}
+
+/* Staff -> Staff Content (for footer button) =======*/
+.staff .staff-content .btn {
+    margin-top: 80px;
+    text-align: center;
+}
+/* Latestposts -> Latestposts content =======*/
+
+
+.latestposts {
+    padding: 80px 0;
+}
+
+.latestposts .post a {
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+    color: #CF9C67;
+}
+.latestposts .post a i {
+    margin-right: 5px;
+    color: #A1A1A1;
+}
+
+.latestposts .post a:nth-of-type(2n+2) i {
+    padding-left: 5px;
+    border-left: 1px solid;
+    border-color: #7A7A7A;
+}
+.latestposts .post text {
+    color: #7A7A7A;
+}
+.latestposts .post text h6 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.latestposts .post text p {
+    margin: 14px 0;
+}
+.latestposts .post text a {
+    text-transform: capitalize;
+}
+
+
+.latestposts .latestposts-content .btn {
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* Newsletter -> Newsletter content =======*/
+.newsletter {
+    padding: 80px 0;
+    background-image: url(../images/newsletter-background.png);
+    background-size: cover;
+    background-position: center;
+}
+.newsletter-content .section-title h3,
+.newsletter-content .section-title p {
+    color: #FFFFFF;
+}
+.newsletter-content form fieldset {
+    margin: 0;
+    padding: 0;
+}
+.newsletter-content form fieldset input {
+    margin: 0 12vw;
+    width: 50vw;
+    color: #FFFFFF;
+    padding: 8px;
+    border: 1px solid;
+    border-color: #7A7A7A;
+}
+
+.newsletter:hover form fieldset input {
+    border-color: #FFFFFF; 
+}
+.newsletter:focus form fieldset input {
+    border-color: #CF9C67; 
+}
+.newsletter-content form fieldset button {
+    margin: 0 32vw;
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #CF9C67;
+    border: 1px solid #CF9C67;
+    padding: 8px 18px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -315,9 +478,16 @@ header .navbar-content a:last-of-type {
     .main-title .main-title-content h1 {
         margin-bottom: 50px
     }
-    .main-title .main-title-content a {
-        max-width: 300px;
+    .main-title .main-title-content .button-align {
+        max-width: 280px;
+        margin: 0 auto;
         display: block;
+        text-align: center;
+    }
+    .main-title .main-title-content .button-align a {
+        margin: 0;
+        display: block;
+        max-width: 280px;
         margin-bottom: 15px;
     }
     .intro-content article text h6 {

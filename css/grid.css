@@ -61,6 +61,37 @@
 	grid-gap: 30px;
 }
 
+/* Staff -> Staff Content =======*/
+.staff-content {
+	grid-column: 2 / -2;
+}
+.staff-presentation {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 30px;
+}
+
+/* Latestposts -> Latestposts content =======*/
+.latestposts-content {
+	grid-column: 2 / -2;
+}
+.latestposts-content .latestposts-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+/* Newsletter -> Newsletter content =======*/
+.newsletter-content {
+	grid-column: 2 / -2;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -114,4 +145,9 @@
 		grid-template-columns: 1fr;
 	}
 
+}
+
+
+@media only screen and (max-width: 450px) {
+	
 }
