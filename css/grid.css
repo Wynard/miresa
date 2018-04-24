@@ -40,6 +40,28 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
+/* Features -> Features Content */
+.features-content {
+	grid-column: 2 / -2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.features-content .section-title {
+	grid-column: 1 / -1;
+}
+.features-content .btn {
+	grid-column: 1 / -1;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

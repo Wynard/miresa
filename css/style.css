@@ -22,6 +22,9 @@ h5,
 h6 {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
+.section-title {
+    margin-bottom: 80px;
+}
 .section-title h1,
 .section-title h2,
 .section-title h3,
@@ -155,9 +158,6 @@ header .navbar-content a:last-of-type {
 .intro {
     padding: 80px 0;
 }
-.intro .intro-content .section-title {
-    margin-bottom: 80px;
-}
 
 .intro-content article text h6 {
     font-size: 22px;
@@ -185,10 +185,57 @@ header .navbar-content a:last-of-type {
     background-size: cover;
 }
 
+/* Features -> Features Content */
+.features {
+    padding: 80px 0;
+    background-image: url(../images/features-background.png);
+    background-size: cover;
+    background-position: center;
+}
 
+.features-content .section-title h3,
+.features-content .section-title p {
+    color: #FFFFFF;
+}
 
-
-
+.features-content .column {
+    color: #FFFFFF;
+}
+.features-content .column:nth-of-type(4n+3),
+.features-content .column:nth-of-type(4n+4),
+.features-content .column:nth-of-type(4n+5) {
+    margin-left: 20px;
+}
+.features-content .column > i {
+    margin-bottom: 30px;
+}
+.features-content .column h6 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.features-content .column a {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+.features-content .column a i {
+    margin-right: 16px;
+    color: #CF9C67;
+    transition: all .3s ease-in-out;
+}
+.features-content .column a:hover {
+    color: #CF9C67;
+}
+.features-content .column a:hover i {
+    color: #FFFFFF;
+}
+.features-content .btn {
+    text-align: center;
+    margin-top: 80px;
+    display: block;
+}
 
 
 
