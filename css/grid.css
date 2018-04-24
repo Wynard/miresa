@@ -31,9 +31,15 @@
 	grid-column: 2 / -2;
 }
 
+/* Intro  -> Intro Content ======*/
 
-
-
+.intro-content {
+	grid-column: 2 / -2;
+}
+.intro-content article {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 
 
 
