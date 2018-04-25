@@ -85,7 +85,7 @@ header .very-top-bar-content a {
 header .very-top-bar-content a:last-of-type {
     margin-right: 0;
 }
-header .very-top-bar-content .current-page {
+header .navbar-content ul .current-page {
     color: #CF9C67;
 }
 
@@ -94,21 +94,33 @@ header .navbar {
     background-color: rgb(0, 0, 0, 0.2);
 }
 header .navbar-content h3 {
+    padding: 16px 0;
     align-self: center;
     font-size: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-header .navbar-content a {
+
+header .navbar-content ul {
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+    list-style: none;
+}
+header .navbar-content ul li {
+    display: inline-block;
+}
+header .navbar-content ul li a {
     align-self: center;
     padding: 24px 0;
-    margin-right: 22px;
+    padding-right: 15px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: right;
 }
-header .navbar-content a:last-of-type {
-    margin-right: 0
+
+header .navbar-content ul li:last-of-type > a {
+    padding-right: 0;
 }
 .navbar .navbar-content form select {
     padding: 5px;
@@ -117,7 +129,102 @@ header .navbar-content a:last-of-type {
     color: #FFFFFF;
     cursor: pointer;
 }
+.navbar-content {
+    position: relative;
+}
+/* Header -> Navbar -> PAGES dropdown content =========*/
+.navbar-content .pages {
+    opacity: 0;
+    visibility: hidden;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    transition: all .3s ease-in-out;
+}
+.navbar-content .pages a {
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,.2);
+    border: 1px solid;
+    border-color: rgba(0,0,0,.2);
+}
 
+#pages-btn:hover .pages {
+    visibility: visible;
+    opacity: 1;
+}
+#pages-btn:hover a[href="pages.html"] {
+    color: #CF9C67;
+}
+
+.navbar-content {
+    position: relative;
+}
+/* Header -> Navbar -> DROPDOWN dropdown content =========*/
+.navbar-content .dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 198px;
+    right: 115px;
+    transition: all .3s ease-in-out;
+}
+.navbar-content .dropdown ul {
+    list-style: none;
+}
+.navbar-content .dropdown ul li {
+    display: inline-block;
+}
+.navbar-content .dropdown a {
+    width: 180px;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,.2);
+    border: 1px solid;
+    border-color: rgba(0,0,0,.2);
+}
+
+#dropdown-btn:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+#dropdown-btn:hover a[href="dropdown.html"] {
+    color: #CF9C67;
+}
+/* Header -> Navbar -> DROPDOWN -> DROPRIGHT dropdown content =========*/
+.navbar-content .dropright {
+    opacity: 0;
+    visibility: hidden;
+    width: 100px;
+    position: absolute;
+    top: 43px;
+    left: 180px;
+    transition: all .3s ease-in-out;
+}
+.navbar-content .dropright a {
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,.2);
+    border: 1px solid;
+    border-color: rgba(0,0,0,.2);
+}
+
+#dropright-btn:hover .dropright {
+    visibility: visible;
+    opacity: 1;
+}
+#dropright-btn:hover a[href="pages.html"] {
+    color: #CF9C67;
+}
 /* Header -> Main Title =========*/
 
 .main-title .main-title-content {
@@ -508,6 +615,13 @@ footer a {
     }
     .features-content {
         text-align: center;
+    }
+    .navbar-content > ul  {
+        display: none;
+    }
+
+    .navbar-content > form {
+        display: block;
     }
     .features-content .column > i {
         margin-top: 30px;
