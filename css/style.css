@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -66,6 +67,11 @@ h6 {
     padding: 8px 18px 10px;
     transition: all .3s ease-in-out;
 }
+.button:hover {
+    background: transparent;
+    color: #7A7A7A;
+    border-color: #7A7A7A;
+}
 /* Header -> Very Top Bar =========*/
 header {
     background-image: url(../images/header-background.png);
@@ -118,7 +124,9 @@ header .navbar-content ul li a {
     color: #FFFFFF;
     text-align: right;
 }
-
+header .navbar-content ul li a:hover {
+    color: #CF9C67;
+}
 header .navbar-content ul li:last-of-type > a {
     padding-right: 0;
 }
@@ -156,10 +164,6 @@ header .navbar-content ul li:last-of-type > a {
     visibility: visible;
     opacity: 1;
 }
-#pages-btn:hover a[href="pages.html"] {
-    color: #CF9C67;
-}
-
 .navbar-content {
     position: relative;
 }
@@ -194,9 +198,7 @@ header .navbar-content ul li:last-of-type > a {
     visibility: visible;
     opacity: 1;
 }
-#dropdown-btn:hover a[href="dropdown.html"] {
-    color: #CF9C67;
-}
+
 /* Header -> Navbar -> DROPDOWN -> DROPRIGHT dropdown content =========*/
 .navbar-content .dropright {
     opacity: 0;
@@ -222,9 +224,7 @@ header .navbar-content ul li:last-of-type > a {
     visibility: visible;
     opacity: 1;
 }
-#dropright-btn:hover a[href="pages.html"] {
-    color: #CF9C67;
-}
+
 /* Header -> Main Title =========*/
 
 .main-title .main-title-content {
